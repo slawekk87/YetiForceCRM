@@ -54,7 +54,7 @@
     "html5shiv": "^3.7.3",
     "inputmask": "^4.0",
     "jQuery-Validation-Engine": "https://github.com/YetiForceCompany/jQuery-Validation-Engine#master",
-    "jquery": ">3.0.0",
+    "jquery": "3.5.0",
     "jquery-hoverintent": "^1.9.0",
     "jquery-lazy": "^1.7.7",
     "jquery-outside-events": "^1.0.0",
@@ -78,11 +78,17 @@
     "select2-theme-bootstrap4": "^0.2.0-beta.2",
     "split.js": "^1.5.10",
     "store": "^2.0.12",
-    "tributejs": "^3.4.0"
+    "tributejs": "^3.4.0",
+    "snyk": "^1.316.1"
   },
   "resolutions": {},
   "bugs": {
     "url": "https://github.com/YetiForceCompany/YetiForceCRM/issues"
   },
-  "homepage": "https://github.com/YetiForceCompany/YetiForceCRM#readme"
+  "homepage": "https://github.com/YetiForceCompany/YetiForceCRM#readme",
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
